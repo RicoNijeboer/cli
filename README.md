@@ -1,4 +1,5 @@
 #CLI
+
 <img src="/docs/assets/logo.png?raw=true" width="100" width="100" alt="CLI Logo" />
 
 ## Install guide

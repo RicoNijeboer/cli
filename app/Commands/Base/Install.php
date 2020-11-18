@@ -5,7 +5,6 @@ namespace App\Commands\Base;
 use App\Commands\Concerns\ExecutesCliCommands;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use LaravelZero\Framework\Commands\BuildCommand;
 use LaravelZero\Framework\Commands\Command;
 
 /**
@@ -43,6 +42,16 @@ class Install extends Command
         }
 
         $path = base_path('bin');
+
+        if ( ! is_dir($path))
+        {
+            File::makeDirectory($path, 0755, true);
+        }
+
+        if ( ! file_exists($path . DIRECTORY_SEPARATOR . 'rico'))
+        {
+            File::link(base_path('rico'), $path . DIRECTORY_SEPARATOR . 'rico');
+        }
 
         $content = File::get($bashSource);
 

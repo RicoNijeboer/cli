@@ -2,6 +2,20 @@
 
 <img src="/docs/assets/logo.png?raw=true" width="100" width="100" alt="CLI Logo" />
 
+## Table of contents
+- [CLI](#cli)
+  - [Install guide](#install-guide)
+  - [Commands](#commands)
+    - [Install](#install)
+    - [Update](#update)
+    - [SCSS Variables](#scss-variables)
+      - [Usage](#usage)
+      - [Options](#options)
+        - [-d or --dir](#-d-or---dir)
+        - [-o or --out](#-o-or---out)
+        - [-r or --rule](#-r-or---rule)
+    - [Personal commands](#personal-commands)
+
 ## Install guide
 Installing the command is really simple;
 1. ```shell script
@@ -15,6 +29,10 @@ Installing the command is really simple;
    rico {command}
    ```
 1. Profit 🎉
+1. _Optional:_ add an alias for the command (for example your own name 👍🏼)
+   ```shell script
+   ln -s ./rico ./bin/{alias}
+   ```
 
 ## Commands
 
@@ -30,7 +48,7 @@ When you know this path you can run the command below, replacing the `{SOURCE}` 
 ./rico install {SOURCE}
 ```
 
-### Updates
+### Update
 ```shell script
 rico update
 ```

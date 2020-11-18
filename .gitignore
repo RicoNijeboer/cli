@@ -3,5 +3,6 @@
 /.idea
 /.vscode
 /.vagrant
+/bin
 .phpunit.result.cache
 .env
